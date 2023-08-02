@@ -281,7 +281,7 @@ class PaymentScreen extends StatelessWidget {
                                       padding: const EdgeInsets.symmetric(
                                           horizontal: 20.0),
                                       child: CustomTextInput(
-                                          hintText: "card Number"),
+                                          hintText: "Card Number"),
                                     ),
                                     SizedBox(
                                       height: 20,
@@ -313,11 +313,17 @@ class PaymentScreen extends StatelessWidget {
                                         ],
                                       ),
                                     ),
+                                    SizedBox(
+                                      height: 20,
+                                    ),
                                     Padding(
                                       padding: const EdgeInsets.symmetric(
                                           horizontal: 20.0),
                                       child: CustomTextInput(
                                           hintText: "Security Code"),
+                                    ),
+                                    SizedBox(
+                                      height: 10,
                                     ),
                                     Padding(
                                       padding: const EdgeInsets.symmetric(
@@ -326,7 +332,7 @@ class PaymentScreen extends StatelessWidget {
                                           hintText: "First Name"),
                                     ),
                                     SizedBox(
-                                      height: 20,
+                                      height: 10,
                                     ),
                                     Padding(
                                       padding: const EdgeInsets.symmetric(
@@ -336,25 +342,6 @@ class PaymentScreen extends StatelessWidget {
                                     ),
                                     SizedBox(
                                       height: 20,
-                                    ),
-                                    Padding(
-                                      padding: const EdgeInsets.symmetric(
-                                          horizontal: 20.0),
-                                      child: Row(
-                                        mainAxisAlignment:
-                                            MainAxisAlignment.spaceBetween,
-                                        children: [
-                                          Text("You can remove this card"),
-                                          Switch(
-                                            value: false,
-                                            onChanged: (_) {},
-                                            thumbColor:
-                                                MaterialStateProperty.all(
-                                              AppColor.secondary,
-                                            ),
-                                          )
-                                        ],
-                                      ),
                                     ),
                                     SizedBox(
                                       height: 30,

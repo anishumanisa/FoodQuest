@@ -291,48 +291,48 @@ class IndividualItem extends StatelessWidget {
                                         SizedBox(
                                           height: 5,
                                         ),
-                                        Padding(
-                                          padding: const EdgeInsets.symmetric(
-                                              horizontal: 20),
-                                          child: Container(
-                                            height: 50,
-                                            width: double.infinity,
-                                            padding: const EdgeInsets.only(
-                                                left: 30, right: 10),
-                                            decoration: ShapeDecoration(
-                                              shape: RoundedRectangleBorder(
-                                                borderRadius:
-                                                    BorderRadius.circular(5),
-                                              ),
-                                              color: AppColor.placeholderBg,
-                                            ),
-                                            child: DropdownButtonHideUnderline(
-                                              child: DropdownButton(
-                                                hint: Row(
-                                                  children: [
-                                                    Text(
-                                                        "-Select the ingredients-"),
-                                                  ],
-                                                ),
-                                                value: "default",
-                                                onChanged: (_) {},
-                                                items: [
-                                                  DropdownMenuItem(
-                                                    child: Text(
-                                                        "-Select the ingredients-"),
-                                                    value: "default",
-                                                  ),
-                                                ],
-                                                icon: Image.asset(
-                                                  Helper.getAssetName(
-                                                    "dropdown.png",
-                                                    "virtual",
-                                                  ),
-                                                ),
-                                              ),
-                                            ),
-                                          ),
-                                        ),
+                                        // Padding(
+                                        //   padding: const EdgeInsets.symmetric(
+                                        //       horizontal: 20),
+                                        //   child: Container(
+                                        //     height: 50,
+                                        //     width: double.infinity,
+                                        //     padding: const EdgeInsets.only(
+                                        //         left: 30, right: 10),
+                                        //     decoration: ShapeDecoration(
+                                        //       shape: RoundedRectangleBorder(
+                                        //         borderRadius:
+                                        //             BorderRadius.circular(5),
+                                        //       ),
+                                        //       color: AppColor.placeholderBg,
+                                        //     ),
+                                        //     child: DropdownButtonHideUnderline(
+                                        //       child: DropdownButton(
+                                        //         hint: Row(
+                                        //           children: [
+                                        //             Text(
+                                        //                 "-Select the ingredients-"),
+                                        //           ],
+                                        //         ),
+                                        //         value: "default",
+                                        //         onChanged: (_) {},
+                                        //         items: [
+                                        //           DropdownMenuItem(
+                                        //             child: Text(
+                                        //                 "-Select the ingredients-"),
+                                        //             value: "default",
+                                        //           ),
+                                        //         ],
+                                        //         icon: Image.asset(
+                                        //           Helper.getAssetName(
+                                        //             "dropdown.png",
+                                        //             "virtual",
+                                        //           ),
+                                        //         ),
+                                        //       ),
+                                        //     ),
+                                        //   ),
+                                        // ),
                                         SizedBox(
                                           height: 15,
                                         ),
@@ -382,7 +382,7 @@ class IndividualItem extends StatelessWidget {
                                                                 .center,
                                                         children: [
                                                           Text(
-                                                            "2",
+                                                            "1",
                                                             style: TextStyle(
                                                               color: AppColor
                                                                   .orange,
@@ -421,123 +421,135 @@ class IndividualItem extends StatelessWidget {
                                                       .symmetric(
                                                     horizontal: 20,
                                                   ),
-                                                  child: Container(
-                                                    height: 160,
-                                                    width: double.infinity,
-                                                    margin:
-                                                        const EdgeInsets.only(
-                                                      left: 50,
-                                                      right: 40,
-                                                    ),
-                                                    decoration: ShapeDecoration(
-                                                      shape:
-                                                          RoundedRectangleBorder(
-                                                        borderRadius:
-                                                            BorderRadius.only(
-                                                          topLeft:
-                                                              Radius.circular(
-                                                                  40),
-                                                          bottomLeft:
-                                                              Radius.circular(
-                                                                  40),
-                                                          topRight:
-                                                              Radius.circular(
-                                                                  10),
-                                                          bottomRight:
-                                                              Radius.circular(
-                                                                  10),
+                                                  child: Column(
+                                                    children: [
+                                                      SizedBox(height: 20),
+                                                      Container(
+                                                        // height: 160,
+                                                        height: 180,
+                                                        width: double.infinity,
+                                                        margin: const EdgeInsets
+                                                            .only(
+                                                          left: 0,
+                                                          right: 0,
+                                                        ),
+                                                        decoration:
+                                                            const ShapeDecoration(
+                                                          shape:
+                                                              RoundedRectangleBorder(
+                                                            borderRadius:
+                                                                BorderRadius
+                                                                    .only(
+                                                              topLeft: Radius
+                                                                  .circular(40),
+                                                              bottomLeft: Radius
+                                                                  .circular(40),
+                                                              topRight: Radius
+                                                                  .circular(40),
+                                                              bottomRight:
+                                                                  Radius
+                                                                      .circular(
+                                                                          40),
+                                                            ),
+                                                          ),
+                                                          shadows: [
+                                                            BoxShadow(
+                                                              color:
+                                                                  Colors.white,
+                                                              offset:
+                                                                  Offset(0, 5),
+                                                              blurRadius: 5,
+                                                            ),
+                                                          ],
+                                                          color: Colors.orange,
+                                                        ),
+                                                        child: Column(
+                                                          mainAxisAlignment:
+                                                              MainAxisAlignment
+                                                                  .center,
+                                                          children: [
+                                                            const Text(
+                                                              "Total Price",
+                                                              style: TextStyle(
+                                                                  color: Colors
+                                                                      .white),
+                                                            ),
+                                                            SizedBox(
+                                                              height: 10,
+                                                            ),
+                                                            Text(
+                                                              "Rp 15.000",
+                                                              style: TextStyle(
+                                                                color: Colors
+                                                                    .white,
+                                                                fontWeight:
+                                                                    FontWeight
+                                                                        .bold,
+                                                                fontSize: 20,
+                                                              ),
+                                                            ),
+                                                            SizedBox(
+                                                                height: 10),
+                                                            SizedBox(
+                                                              width: 200,
+                                                              child:
+                                                                  ElevatedButton(
+                                                                      onPressed:
+                                                                          () {},
+                                                                      child:
+                                                                          Row(
+                                                                        mainAxisAlignment:
+                                                                            MainAxisAlignment.center,
+                                                                        children: [
+                                                                          // Image.asset(
+                                                                          //   Helper.getAssetName(
+                                                                          //       "add_to_cart.png",
+                                                                          //       "virtual"),
+                                                                          // ),
+                                                                          Text(
+                                                                            "  Add to Cart",
+                                                                          )
+                                                                        ],
+                                                                      )),
+                                                            )
+                                                          ],
                                                         ),
                                                       ),
-                                                      shadows: [
-                                                        BoxShadow(
-                                                          color:
-                                                              AppColor.orange,
-                                                          offset: Offset(0, 5),
-                                                          blurRadius: 5,
-                                                        ),
-                                                      ],
-                                                      color: Colors.orange,
-                                                    ),
-                                                    child: Column(
-                                                      mainAxisAlignment:
-                                                          MainAxisAlignment
-                                                              .center,
-                                                      children: [
-                                                        const Text(
-                                                          "Total Price",
-                                                          style: TextStyle(
-                                                              color:
-                                                                  Colors.white),
-                                                        ),
-                                                        SizedBox(
-                                                          height: 10,
-                                                        ),
-                                                        Text(
-                                                          "LKR 1500",
-                                                          style: TextStyle(
-                                                            color: Colors.white,
-                                                            fontWeight:
-                                                                FontWeight.bold,
-                                                            fontSize: 20,
-                                                          ),
-                                                        ),
-                                                        SizedBox(height: 10),
-                                                        SizedBox(
-                                                          width: 200,
-                                                          child: ElevatedButton(
-                                                              onPressed: () {},
-                                                              child: Row(
-                                                                mainAxisAlignment:
-                                                                    MainAxisAlignment
-                                                                        .center,
-                                                                children: [
-                                                                  Image.asset(
-                                                                    Helper.getAssetName(
-                                                                        "add_to_cart.png",
-                                                                        "virtual"),
-                                                                  ),
-                                                                  Text(
-                                                                    "Add to Cart",
-                                                                  )
-                                                                ],
-                                                              )),
-                                                        )
-                                                      ],
-                                                    ),
+                                                    ],
                                                   ),
                                                 ),
                                               ),
-                                              Padding(
-                                                padding: const EdgeInsets.only(
-                                                  right: 20,
-                                                ),
-                                                child: Align(
-                                                  alignment:
-                                                      Alignment.centerRight,
-                                                  child: Container(
-                                                    width: 60,
-                                                    height: 60,
-                                                    decoration: ShapeDecoration(
-                                                      color: Colors.white,
-                                                      shadows: [
-                                                        BoxShadow(
-                                                          color: AppColor
-                                                              .placeholder
-                                                              .withOpacity(0.3),
-                                                          offset: Offset(0, 5),
-                                                          blurRadius: 5,
-                                                        ),
-                                                      ],
-                                                      shape: CircleBorder(),
-                                                    ),
-                                                    child: Image.asset(
-                                                      Helper.getAssetName(
-                                                          "cart_filled.png",
-                                                          "virtual"),
-                                                    ),
-                                                  ),
-                                                ),
-                                              ),
+                                              // Padding(
+                                              //   padding: const EdgeInsets.only(
+                                              //     right: 20,
+                                              //   ),
+                                              //   child: Align(
+                                              //     alignment:
+                                              //         Alignment.centerRight,
+                                              //     child: Container(
+                                              //       width: 60,
+                                              //       height: 60,
+                                              //       decoration: ShapeDecoration(
+                                              //         color: Colors.green,
+                                              //         shadows: [
+                                              //           BoxShadow(
+                                              //             color: AppColor
+                                              //                 .placeholder
+                                              //                 .withOpacity(0.3),
+                                              //             offset: Offset(0, 5),
+                                              //             blurRadius: 5,
+                                              //           ),
+                                              //         ],
+                                              //         shape: CircleBorder(),
+                                              //       ),
+                                              //       child: Image.asset(
+                                              //         Helper.getAssetName(
+                                              //             "cart_filled.png",
+                                              //             "virtual"),
+                                              //       ),
+                                              //     ),
+                                              //   ),
+                                              // ),
                                             ],
                                           ),
                                         )
@@ -553,7 +565,7 @@ class IndividualItem extends StatelessWidget {
                                     alignment: Alignment.topRight,
                                     child: Container(
                                       width: 60,
-                                      height: 60,
+                                      height: 20,
                                       color: Colors.white,
                                       child: Image.asset(
                                         Helper.getAssetName(
@@ -572,9 +584,9 @@ class IndividualItem extends StatelessWidget {
                     ),
                   ],
                 ),
-                SizedBox(
-                  height: 10,
-                ),
+                // SizedBox(
+                //   height: 10,
+                // ),
               ],
             ),
           ),
@@ -586,53 +598,5 @@ class IndividualItem extends StatelessWidget {
         ],
       ),
     );
-  }
-}
-
-class CustomTriangle extends CustomClipper<Path> {
-  @override
-  Path getClip(Size size) {
-    Offset controlpoint = Offset(size.width * 0, size.height * 0.5);
-    Offset endpoint = Offset(size.width * 0.2, size.height * 0.85);
-    Offset controlpoint2 = Offset(size.width * 0.33, size.height);
-    Offset endpoint2 = Offset(size.width * 0.6, size.height * 0.9);
-    Offset controlpoint3 = Offset(size.width * 1.4, size.height * 0.5);
-    Offset endpoint3 = Offset(size.width * 0.6, size.height * 0.1);
-    Offset controlpoint4 = Offset(size.width * 0.33, size.height * 0);
-    Offset endpoint4 = Offset(size.width * 0.2, size.height * 0.15);
-
-    Path path = new Path()
-      ..moveTo(size.width * 0.2, size.height * 0.15)
-      ..quadraticBezierTo(
-        controlpoint.dx,
-        controlpoint.dy,
-        endpoint.dx,
-        endpoint.dy,
-      )
-      ..quadraticBezierTo(
-        controlpoint2.dx,
-        controlpoint2.dy,
-        endpoint2.dx,
-        endpoint2.dy,
-      )
-      ..quadraticBezierTo(
-        controlpoint3.dx,
-        controlpoint3.dy,
-        endpoint3.dx,
-        endpoint3.dy,
-      )
-      ..quadraticBezierTo(
-        controlpoint4.dx,
-        controlpoint4.dy,
-        endpoint4.dx,
-        endpoint4.dy,
-      );
-
-    return path;
-  }
-
-  @override
-  bool shouldReclip(covariant CustomClipper<Path> oldClipper) {
-    return true;
   }
 }

@@ -97,6 +97,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
         ],
       ),
       floatingActionButton: FloatingActionButton(
+        backgroundColor: Color.fromARGB(255, 195, 248, 136),
         onPressed: () {
           if (_currentIndex == 2) {
             Navigator.push(context,
@@ -108,10 +109,18 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
             );
           }
         },
-        child: const Icon(CupertinoIcons.chevron_right, color: Colors.white),
         // child: Text("Next"),
 
-        backgroundColor: Colors.transparent,
+        // backgroundColor: Colors.white10,
+        child: Padding(
+          padding: const EdgeInsets.only(top: 20, bottom: 20, left: 3),
+          child: Icon(
+            CupertinoIcons.chevron_right,
+            color: Colors.black,
+            size: 18,
+            weight: 30,
+          ),
+        ),
       ),
     );
   }

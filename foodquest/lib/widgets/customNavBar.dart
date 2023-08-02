@@ -74,12 +74,19 @@ class CustomNavBar extends StatelessWidget {
                           mainAxisAlignment: MainAxisAlignment.end,
                           children: [
                             menu
-                                ? Image.asset(
-                                    Helper.getAssetName(
-                                        "more_filled.png", "virtual"),
+                                ? Padding(
+                                    padding: const EdgeInsets.all(8.0),
+                                    child: Image.asset(
+                                      Helper.getAssetName(
+                                          "more_filled.png", "virtual"),
+                                    ),
                                   )
-                                : Image.asset(
-                                    Helper.getAssetName("more.png", "virtual"),
+                                : Padding(
+                                    padding: const EdgeInsets.all(10.0),
+                                    child: Image.asset(
+                                      Helper.getAssetName(
+                                          "more.png", "virtual"),
+                                    ),
                                   ),
                             menu
                                 ? Text("Menu",
